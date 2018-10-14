@@ -19,10 +19,4 @@
              destroy-method="closeSesion"
              scope="singleton"
         />
-    <!--
-        Tester de la base de datos-->
-       <bean id="DBTester"
-             class="com.primos.Test.DBTest"
-             init-method="testDB"
-        />
 </beans>
