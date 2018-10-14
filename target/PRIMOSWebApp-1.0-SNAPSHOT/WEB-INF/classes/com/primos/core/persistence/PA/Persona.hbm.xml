@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/10/2018 08:08:00 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.primos.core.persistence.PA.Persona" table="persona" optimistic-lock="version">
+        <id name="idpersona" type="long">
+            <column name="idpersona" />
+            <generator class="assigned" />
+        </id>
+        <property name="bitactivo" type="boolean">
+            <column name="bitactivo" not-null="true" />
+        </property>
+        <property name="dtmfechacreacion" type="date">
+            <column name="dtmfechacreacion" length="13" not-null="true" />
+        </property>
+        <property name="strapellido" type="string">
+            <column name="strapellido" length="80" not-null="true" />
+        </property>
+        <property name="strnombre" type="string">
+            <column name="strnombre" length="80" not-null="true" />
+        </property>
+        <property name="strnumerodocumento" type="string">
+            <column name="strnumerodocumento" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

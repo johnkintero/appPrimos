@@ -1,0 +1,5 @@
+com\primos\core\connectors\ConnectionFactory.class
+com\primos\core\persistence\PersistenceManager.class
+com\primos\core\persistence\EntityManager.class
+com\primos\core\constants\GBComNumConstants.class
+com\primos\core\constants\GBComStrConstants.class
